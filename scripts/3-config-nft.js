@@ -2,16 +2,16 @@ import sdk from "./1-initialize-sdk.js";
 import { readFileSync } from "fs";
 
 const bundleDrop = sdk.getBundleDropModule(
-  "INSERT_DROP_MODULE_ADDRESS",
+  "0xA57ea94A4F2492eccE27DC3E6F229dF3Fa95c9FB",
 );
 
 (async () => {
   try {
     await bundleDrop.createBatch([
       {
-        name: "Leaf Village Headband",
-        description: "This NFT will give you access to NarutoDAO!",
-        image: readFileSync("scripts/assets/headband.png"),
+        name: "Metaverse card from Yu-Gi-Oh",
+        description: "This NFT will give you access to MetaDAO!",
+        image: readFileSync("scripts/assets/metaverse.jpg"),
       },
     ]);
     console.log("✅ Successfully created a new NFT in the drop!");
