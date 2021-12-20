@@ -176,6 +176,19 @@ const App = () => {
       });
     }, [address]);
 
+    //SHOW OF IF USER IS NOT ON RINKEBY NETWORK
+    if (error && error.name === "UnsupportedChainIdError") {
+      return (
+        <div className="unsupported-network">
+          <h2>Please connect to Rinkeby</h2>
+          <p>
+            This dapp only works on the Rinkeby network, please switch networks
+            in your connected wallet.
+          </p>
+        </div>
+      );
+    }
+
   //Case User has not connected its wallet - ask him to connect it
   if (!address) {
     return (
