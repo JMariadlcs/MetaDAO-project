@@ -207,7 +207,7 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className="member-page">
-        <h1>🍪DAO Member Page</h1>
+        <h1>🌟 METADAO MEMBER PAGE 🌟</h1>
         <p>Congratulations on being a member</p>
         <div>
           <div>
@@ -384,7 +384,7 @@ const App = () => {
   // Render mint nft screen.
   return (
     <div className="mint-nft">
-      <h1>Mint your free 🍪DAO Membership NFT</h1>
+      <h1>Mint your free 🌟DAO Membership NFT</h1>
       <button
         disabled={isClaiming}
         onClick={() => mintNft()}
